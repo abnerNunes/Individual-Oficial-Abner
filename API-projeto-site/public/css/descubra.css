@@ -1,0 +1,176 @@
+body{
+    background-color: rgb(117 21 22);
+}
+
+.container-geral{
+    height: 100%;
+    width: 100%;
+}
+
+.meio{
+    width: 85%;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(255, 221, 221);
+    margin-left: 150px;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    background-image: url('banner2.jpg');
+    text-align: justify;
+    background-size: cover;
+    border-bottom: solid rgb(155, 1, 1) 8px;
+    box-shadow: #000000 0px 45px 600px ;
+}
+
+.banner-container h3{
+width: 70%;
+margin: auto;
+text-align: center;
+}
+
+.banner-container h1 {
+    color: white;
+    padding-top: 135px;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+.banner h1{
+    font-family: 'Metal Lord';
+   padding-top: 11%;
+    color: white;
+    text-align: center;
+}
+.banner h3{
+        font-family: 'MetalShred';
+        font-size: 50px;
+        color: white;
+        padding-left: 40px;
+        text-align: center;
+}
+
+.corpo-div1 {
+    height: 560px;
+    border-bottom: solid rgb(155, 1, 1) 5px;
+    background-color: rgb(255, 231, 231);
+    box-shadow: rgb(0, 0, 0) 5px 4px 10px;
+    align-items: center;
+    display: block;
+}
+
+.txt-div1 {
+    justify-content: safe;
+    width: 1000px;
+    float: right;
+    font-size: 30px;
+    margin-top: 75px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.div-select{
+    width:350px;     
+     overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+    }
+
+.lista select { 
+background: no-repeat #720000;/* (Seta) */     
+background-position: 205px center;       
+width: 270px;     
+height:68px; 
+font-family:'MetalShred'; 
+font-size:33px; 
+padding:13px 20px 13px 30px; /* Configurações de padding para posicionar o texto no campo */
+color:#fff;      
+text-indent: 0.01px; 
+text-overflow: "";  
+margin-left: 23px;
+border-radius: 10px;
+}
+
+.tituloDes h1{
+    font-family: 'MetalShred';
+    color: rgb(121, 2, 2);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid rgb(155, 1, 1) 3px;
+    font-size: 50px;
+}
+
+.listaBut{
+    border-right: solid rgb(155, 1, 1) 2px;
+    height: 360px;
+    width: 20%;
+    padding-top: 100px;
+    float: left;
+}
+
+.listaBut button{
+    width: 270px;     
+    height:68px; 
+    margin-left: 23px;
+    background: no-repeat #720000;
+    font-family:'MetalShred';
+    font-size:40px;
+    color:#fff;
+    border-radius: 10px;
+}
+
+.listaBut h2{
+    font-family: 'Metal Lord';
+ color: rgb(155, 1, 1);
+ padding-bottom: 50px;
+ padding-left: 27px;
+ font-size: 30px;
+}
+
+.result {
+    float: right;
+    width: 1250px;
+}
+
+.result h1 {
+    font-family: 'Metal Lord';
+    float: right;
+    padding-right: 40px;
+    font-size: 40px ;
+}
+
+.result h2{
+    font-family: 'MetalShred';
+    
+}
+
+.result a{
+   
+    color: rgb(114, 0, 0);
+}
+
+.result img{
+    width: 500px;
+    height: 325px;
+    float: right;
+    padding-right: 40px;
+    border-radius: 20px;
+}
+
+.sobreBanda{
+    width: 660px;
+    
+}
+
+.sobre{
+    float: left;
+    font-family: 'Metal Lord';
+    font-size: 26px;
+}
+
+.dados{
+    height: 100px;
+    border-bottom: rgb(114, 0, 0) 2px;
+}

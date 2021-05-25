@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headerNot.css">
+    <link rel="stylesheet" href="css/descubra.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
+    <title>Descubra - INAD</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="Imagens/ICON.png" alt="icon">
+            <h1>I'm <span class="not">Not</span> a Devil</h1>
+            <ul>
+                <li><a href="index.html" class="not">Home</a> </li>
+                <li><a href="descubra.html" style="color: red;">Descubra</a> </li>
+                <li><a href="novidade.html">Novidade</a></li>
+                <li><a href="login.html" >Login</a> </li>
+                <li><a href="cadastro.html" >Cadastro</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-geral">
+        <div class="meio">
+            <div class="banner">
+                <div class="banner-container">
+                    <div class="txt-banner">
+                        <h1>I'm <span class="not">Not</span> a Devil</h1>
+
+                        <h3>TUDO SOBRE O PIOR GENERO MUSICAL</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="corpo-div1">
+
+                <div class="tituloDes">
+                    <h1>CANSADO DE VIVER NO MESMO RITMO? DEIXA QUE A GENTE TE AJUDA!</h1>
+                </div>
+                <div class="listaBut">
+                    <div class="lista">
+                        <h2>Escolha um Estilo</h2>
+
+                        <select name="" id="lista_gen">
+                            <option value="0">ESTILO</option>
+                            <option value="1">BLACK METAL</option>
+                            <option value="2">METALCORE</option>
+                            <option value="3">EMOCORE</option>
+                        </select>
+                    </div>
+
+
+                    <br>
+                    <button onclick="surpreender()">Surpreenda-Me</button>
+                </div>
+                <div class="result" id="result">
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <h1> Um Projeto de:
+            <br>
+            Abner B. M. Nunes
+        </h1>
+
+        <span class="logo"> I'm <span class="not">Not</span> a Devil</span>
+
+        <h2>
+            Projeto em Desenvolvimento
+            <br>
+            Sujeito à Melhorias
+        </h2>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function surpreender() {
+        var rng = Math.random() * 10 + 1;
+        var genero = Number(lista_gen.value);
+
+        if (rng.toFixed(0) == 1 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MAYHEM!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/mayhem.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Mayhem</h3>
+                        <br>
+                        <br>
+                        <h3>A Banda Norueguesa fundadora do "True Norwegian Black Metal" também foi palco de muitas tragédias. O Suicídio de Dead e o assassinato de Euronymous fazem com que suas Músicas tenham um peso muito forte, e uma carga histórica gigantesca.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=ySoWnxfOnIs">The Freezing Moon</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/7mHVfSXtdzvPk7TkdhoekE?si=9560ed8f472f4b00">De Misteriis Dom Sathanas</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Noruega </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Øysten Aarseth </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 2 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA DARKTHRONE!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/darkt.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Darkthrone</h3>
+                        <br>
+                        <br>
+                        <h3>Adepto ao Metal Noruegues, Fenriz deu ao darkthrone todo o pontencial para se tornar uma banda tão potente quando a de seus amigos "Mayhem".</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=QIf2GgA1rGc">Quintessence</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/1WVwSy7kIQ5AmkVa1tPppg?si=dedd06cc41a74e26">Panzerfaust</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Noruega </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Fenriz </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 3 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA NARGAROTH!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/narga.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Nargaroth</h3>
+                        <br>
+                        <br>
+                        <h3>A banda alemã com traços Noruegueses Nargaroth traz uma série de riffs melancólicos, letra agressivas e um vocal necrótico.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Ut0rqG2QL_w">Seven tears Are Flowing To The River</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/1tINWqXriljso6fq4ASrmS?si=c4bcdbd06e5f4335">Black Metal Ist Krieg</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Alemanha </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Rene Wagner </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 4 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA VENOM!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/venom.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Venom</h3>
+                        <br>
+                        <br>
+                        <h3>Muitos os conhecem como os Fundadores do Black Metal, a banda introduziu o conceito que hoje é tão aclamado pelos fãs. Riffs desordenados, batidas imparáveis e vocais agressivos.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=4e0VvHZMaTs">Welcome to Hell</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/1e6Osda6t8UDFYQ29sFVlV?si=09584831a01c4eef">Black Metal</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Inglaterra </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Conrad Lant </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 5 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA BELZEBUBS!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/belzebubs.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Belzebubs</h3>
+                        <br>
+                        <br>
+                        <h3>O que? Você diz que as bandas de metal se levam muito a sério? Conheça Belzebubs, a banda 100% Animada de Black Metal! Com identidades ocultas, o grupo apresenta músicas icônicas e muito bem trabalhadas.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=sxzb00dqNg4">Blackened Call</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/0TAQARpkOylXFwDT81Hdvi?si=70b9840e71a44cba">SPantheon of The Nightside Gods</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> ????? </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> SLØTH </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 6 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA PSYCHONAUT4!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/psycho.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Psychonaut4</h3>
+                        <br>
+                        <br>
+                        <h3>Um dos pilares do "DSBM" europeu. Letras depressivas, gritos de agonia, riffs melancólicos... Psychonaut 4 é um mix de emoções(ruins).</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=RgMVVWHLbfE">Alcoholism</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5olgO4nI8iEO9Lh8dXnqRE?si=8311b6694f794050">Dipsomania</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Georgia </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Graf von Baphomet </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 7 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA ELLENDE!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/ellende.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Ellende</h3>
+                        <br>
+                        <br>
+                        <h3>Uma das melhores e mais atrativas bandas de "DSBM". O Grupo alemão consegue expressar sentimentos de discórdia em suas letras depressivas, seus versos melancólicos, e seus tristes gritos.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=K_EgOM7cwSs">Weltennacht</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/01mVdgFHphrG8Cbgtfronj?si=0bb620d5d5554289">Todbringer</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Alemanha </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Dinko Bakic </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 8 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA EMPEROR!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/emperor.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Emperor</h3>
+                        <br>
+                        <br>
+                        <h3>Emperor é uma banda de metal Norueguesa que seguia os moldes de Euronymous. Após o caso de acusação de Faust, do Mayhem, o baterista foi tocar no Emperor, e permanece lá até hoje.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=YgQRRI9goFg">I Am The Nightside Wizard</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5nTalKcL6vhFMNihs0b3iU?si=22278ad62c8a41d6">In The Nightside Eclipse</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Noruega </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Ihsahn </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 9 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA ANAAL NATHRAKH!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/anaal.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Anaal Nathrakh</h3>
+                        <br>
+                        <br>
+                        <h3>"Hálito de Cobra" diz seu nome, e seus versos tem um poder tão forte quanto! Aresividade, ritmo e crueldade cercam a banda Britânica.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=OwG0J78ibMw">Endarkenment</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/7fhqGPftgWWsuLRi01JybN?si=d35ebdfabdca4d84">Endarkenment</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Britânica </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Mick Kenney </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 10 && genero == 1) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MORTIIS!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/mortiis.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Mortiis</h3>
+                        <br>
+                        <br>
+                        <h3>Mortiis é um projeto de metal eletrônico formado na Noruega em 1991. A ideia de Ellefsen era contar uma história usando os versos da banda.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=88tqXZBs3KI">Parasite God</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5QX3ysIlJDtAQee5qBzxfi?si=68352024faf54420">The Smell of Rain</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Noruega </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Levi Gawron </span>
+                        </h2>
+                    </div>`;
+        }
+
+
+
+        if (rng.toFixed(0) == 1 && genero == 2) {
+            result.innerHTML = ` <br>
+                    <h1>OUÇA ASKING ALEXANDRIA!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/asking.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Asking</h3>
+                        <br>
+                        <br>
+                        <h3>Asking Alexandria é uma das maiores e mais renomadas bandas de MetalCore do mundo. Com seu surgimento na Inglaterra, Asking ja conquistou milhões de corações com seus Riffs agressivos, seus refroões melódicos, e suas letras bem pontuais.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                       
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=z71_E_YqWqA">Final
+                                Episode</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/57iXTZZW4VLkrBoErSsI5y?si=b1b5232a5fbc404a">Stand
+                                Up
+                                And Scream</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Inglaterra </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Danny Worsnop </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 2 && genero == 2) {
+            result.innerHTML = `<br> <h1>OUÇA BRING ME THE HORIZON!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/bring.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Bring</h3>
+                        <br>
+                        <br>
+                        <h3>Bring Me The Horizon é uma banda britânica de MetalCore formada em 2004. A banda apresentou um crescimento absurdo em 2019 e 2020, e vem apresentando mudanças ao longo de seus discos.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Ow_qI_F2ZJI">Throne</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/7FqHuAvmREiIwVXVpZ9ooP?si=d0b5bba05e384cc8">Sempiternal</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Inglaterra </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Oliver Sykes </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 3 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA SLEEPIN WITH SIRENS!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/sleeping.png" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Sleeping</h3>
+                        <br>
+                        <br>
+                        <h3>Sleeping With Sirens é uma banda americana fundada em Orlando, no ano de 2009. A banda aposta em vocais mais agudos e letras amorosas, e continua conquistando o cenário Emo até hoje!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=_UwWYtLWEZg">If You Can't Hang</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/4TuNgoALZ10zEOHgfkxs8T?si=7f548acf90ef4dd1">Let's Cheers To This</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Kellin Quinn </span>
+                        </h2>`;
+        }
+        if (rng.toFixed(0) == 4 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA AS I LAY DYING!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/asILay.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre As I Lay</h3>
+                        <br>
+                        <br>
+                        <h3>As I Lay Dying é uma banda americana formada nos anos 2000. Uma das fundadoras do Genero MetalCore, iniciou umas das principais características do gênero: Versos Pesados e Refrões Aliviantes.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Q0wbyQRRQJA">My Own Grave</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/2NJMu78M8xVy2NAxicD1so?si=5052c50fb9214bb2">Shaped By Fire</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Josh Gilbert </span>
+                        </h2>`;
+        }
+        if (rng.toFixed(0) == 5 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA HOLLOW FRONT!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/hollow.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Hollow Front</h3>
+                        <br>
+                        <br>
+                        <h3>Hollow Front é uma banda de MetalCore americana formada em 2016. Ainda no ínicio, Hollow Front vem ganhando reconhecimento conforme o tempo!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=ovEqI3aKkcY">Still Life</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/4f6ro439F9DJRDnXDIpnkP?si=f365fc8a90e74b7e">Loose Threads</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Tyler Tate </span>
+                        </h2>`;
+        }
+        if (rng.toFixed(0) == 6 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA ARCHITECTS!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/architects.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Architects</h3>
+                        <br>
+                        <br>
+                        <h3>Architects é uma banda inglesa de MetalCore. Seus Riffs são conhecidos por virem acompanhados de BreakDowns insanos, e muitos os consideram os melhores Riffs do Genero.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=RvWbcK3YQ_o">Doomsday</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/2NJMu78M8xVy2NAxicD1so?si=5052c50fb9214bb2">All Our Gods Have Abandoned Us</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Iglaterra </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Sam Carter </span>
+                        </h2>`;
+        }
+        if (rng.toFixed(0) == 7 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MOTIONLESS IN WHITE!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/motionless.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Motionless</h3>
+                        <br>
+                        <br>
+                        <h3>Motionless in White é uma banda de MetalCore americana marcada por suas letras horripilantes, seus trajes góticos e a pintura de face marcante por parte do vocalista!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=B3faYe5V4Sk">Voices</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/4JECM4NZhtpjDX4JbYkh00?si=297578a75533493b">Disguise</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Chris Motionless </span>
+                        </h2>`;
+        }
+        if (rng.toFixed(0) == 8 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA THE AMITY AFFLICTION!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/amity.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Amity</h3>
+                        <br>
+                        <br>
+                        <h3>The Amity Affliction é uma banda australiana formada em 2009. O grupo apesenta uma evolução da clássica formula de MetalCore, acrescentando uma pegada mais depressiva em suas letras e refrões.</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=vu3xGr-lNVI">Pittsburgh</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5AtTKLErRJPLZAOfPabe7m?si=d64177e3ead54190">Misery</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Australia </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Ahren Stringer </span>
+                        </h2></div>`;
+        }
+        if (rng.toFixed(0) == 9 && genero == 2) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MISS MAY I!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/missmay.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Miss May I</h3>
+                        <br>
+                        <br>
+                        <h3>Miss May I é uma banda de MetalCore americana que ficou marcada por seus Riffs e versos agressivos, somados com o Vocal extremamente invocado por parte de Levi Benton!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=f3m3pM3Z-8Q">Rentless Chaos</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/6Qk4RAKoWQbO7ptwqctxgi?si=6bf41178d87842e2">Shadows Inside</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Levi Benton </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 10 && genero == 2) {
+            result.innerHTML = ` <br>
+                    <h1>OUÇA TOO CLOSE TO TOUCH!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/tooclose.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Too Close</h3>
+                        <br>
+                        <br>
+                        <h3>Too Close to Touch é uma banda americana de MetalCore marcada por seus refrões bem melódicos, e seus versos que narram problemas da juventude!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=8No28NDPEJc">Nerve Endings</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/2nGyrk4CKknFVjrEZQud7l?si=fd854c6fa7e0406b">Haven't Been Myself</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Ben Barlow </span>
+                        </h2>
+                    </div> `;
+        }
+
+
+
+
+        if (rng.toFixed(0) == 1 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA THE KILLERS</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/kilelrs.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre The Killers</h3>
+                        <br>
+                        <br>
+                        <h3>The Killers é uma banda de rock alternativo que nos mostra cada vez mais que têm uma grande gama de músicas pra nos surpeender. Seus refrões viciantes e suas letras questionáveis nos fazem amar o grupo!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=gGdGFtwCNBE">Mr.BrightSide</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/4piJq7R3gjUOxnYs6lDCTg?si=1e7439c9490540c9">Hot Fuss</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Brandon Flowers </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 2 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA PANIC! AT THE DISCO</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/panic.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Panic!</h3>
+                        <br>
+                        <br>
+                        <h3>Panic at the Disco conquistou e disseminou o visual Emo pelas ruas nos anos 2000. Esses caras foram responsáveis por trazer e influenciar milhões de adolescentes da Época!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=vc6vs-l5dkc">I Write Sins Not Tragedys</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/6UCWY40zW6W32GHG0llVXH?si=beebe3b9563547f6">Panic  </a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Brendon Urie </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 3 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA 30 Seconds to Mars</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/30seco.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre 30 Seconds</h3>
+                        <br>
+                        <br>
+                        <h3>O grupo musical do famoso Músico e Ator Jared Leto criou alguns Hinos da cena Emo, que hoje são venerados e ouvidos em tons de nostalgia!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=8yvGCAvOAfM">The Kill</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5sHvTCk793vr9EkSKcD7IT?si=2ce597adce114926">A Beautiful Lie</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Jared Leto </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 4 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA NXZERO</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/nxzero.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre NXZero</h3>
+                        <br>
+                        <br>
+                        <h3>Que tal algo nacional? NXZero se mostrou muito presente nas radios dos anos 2000, e consquistou milhoões de fãs com o incrível vocal de Di Ferrero!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=XdglM81b4g8">Cedo ou Tarde</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/1cIrpEIWG4nAn5K2o3sZ1o?si=f499d349f4e24c10">Sete Chaves</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Brasil </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Di Ferrero </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 5 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA BLINK-182</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/blink.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Blink</h3>
+                        <br>
+                        <br>
+                        <h3>Blink, juntamente com Green Day, dominou as radios dos anos 2000. Foi volante do movimento Emo e nos forneceu ótimas músicas para se ter nostalgia!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=s1tAYmMjLdY">I Miss You</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/4hBTxv4QRPePXCFcEI7Vjp?si=5cdfc6b12ab24d05">blink-182</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Travis Barker </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 6 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA A DAY TO REMEMBER</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/a day.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre A Day to Remember</h3>
+                        <br>
+                        <br>
+                        <h3>A Day To Remember é uma banda americana que apresenta alguns dos maiores clássicos do movimento emo!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Pn-6eOxnEMI">All I Want</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/6MEv8dNtVbKDW1WG4Hk6WZ?si=949feee747fa485c">Homesick</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Jeremy McKinnon </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 7 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA GREEN DAY!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/green.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Green Day</h3>
+                        <br>
+                        <br>
+                        <h3>Green Day foi responsável por muitos, dos vários sucessos dos anos 2000. Praticamente fundando o movimento Emo, os Riffs e Versos de Billie Joe conquistaram Milhões de fãs!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Soa3gO7tL-c">Bouleard of Broken Dreams</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5dN7F9DV0Qg1XRdIgW8rke?si=9033ba8262484bf3">American Idiot</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Billie Joe </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 8 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MY CHEMICAL ROMANCE!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/mcr.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre MCR</h3>
+                        <br>
+                        <br>
+                        <h3>A essa altura do campeonato, é impossível que você não conheça MCR, mas se for o caso... My Chemical Romance é a mais conhecida banda Emo dos estados unidos, e desperta um sentimento de Nostalgia com suas músicas estilo anos 2000!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=RRKJiM9Njr8">Welcome to The Black Parade</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/3DuiGV3J09SUhvp8gqNx8h?si=a5c583b9b43d45ff">Three Cheers for Sweet Revenge</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Gerard Way </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 9 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA FALLING IN REVERSE!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/falling.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Falling</h3>
+                        <br>
+                        <br>
+                        <h3>Falling In Reverse é um fenômeno do EmoCore e atrai novos fãs até hoje. A banda deu uma recaída após certas acusações ao vocalista Ronnie, mas isso não os impediu de continuar fazendo muito sucesso!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=rgWr2nln83s">The Drug In Me Is You</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/1KwwS07TEbKS8r1rU4UUe4?si=f92c2b3b0b8c466a">The Drug In Me Is You</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Ronnie Radke </span>
+                        </h2>
+                    </div>`;
+        }
+        if (rng.toFixed(0) == 10 && genero == 3) {
+            result.innerHTML = `<br>
+                    <h1>OUÇA MACHINE GUN KELLY!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/mgk.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre MGK</h3>
+                        <br>
+                        <br>
+                        <h3>Machine Gun Kelly é u pseudônimo de Colson Baker, umdos poucos artistas a dar continuidade ao movimento Emo, e mistura-lo à cultura do HipHop!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=QpbQ4I3Eidg">Bad Things</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/57lgFncHBYu5E3igZnuCJK?si=197f9eb9c9a340cb">Tickets To My Downfall</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Colson Baker </span>
+                        </h2>
+                    </div>`;
+        }
+
+
+
+
+
+    }
+</script>
+
+<!-- <br>
+                    <h1>OUÇA MY GREEND DAY!</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./Imagens/green.jpg" alt="">
+
+                    <div class="sobreBanda">
+                        <h3 class="sobre">Sobre Green Day</h3>
+                        <br>
+                        <br>
+                        <h3>A essa altura do campeonato, é impossível que você não conheça MCR, mas se for o caso... My Chemical Romance é a mais conhecida banda Emo dos estados unidos, e desperta um sentimento de Nostalgia com suas músicas estilo anos 2000!</h3>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                    <div class="dados">
+                        <h2>Música mais popular: <a href="https://www.youtube.com/watch?v=Soa3gO7tL-c">Bouleard of Broken Dreams</a><br>
+                            Álbum mais popular: <a
+                                href="https://open.spotify.com/album/5dN7F9DV0Qg1XRdIgW8rke?si=9033ba8262484bf3">American Idiot</a><br>
+                            País de Origem: <span style="color: rgb(114, 0, 0);"> Estados Unidos </span><br>
+                            Líder da Banda: <span style="color: rgb(114, 0, 0);"> Billie Joe </span>
+                        </h2>
+                    </div> -->

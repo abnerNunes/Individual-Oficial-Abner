@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(117 21 22);
+}
+
+.container-geral{
+    height: 100%;
+    width: 100%;
+}
+
+.meio{
+    width: 85%;
+
+    height: auto;
+    background-color: rgb(255, 221, 221);
+    margin-left: 5%;
+}
+
+.divNovi{
+    margin-left: 30px;
+  
+    width: 500px;
+    float: left;
+}
+
+.divNovi h1{
+    font-family: 'MetalShred';
+    color: rgb(104, 0, 0);
+    font-size: 40px;
+}
+
+.divNovi h2{
+    font-family: 'Metal Lord';
+}
+
+.frame iframe{
+    float: right;
+    width: 500px;
+    padding-right: 20px;
+}
+
+.conjunto{
+   padding-top: 20px;
+    border-bottom: solid rgb(104, 0, 0) 2px ;
+    height: 300px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headerNot.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="funcoesAnunciar.js"></script>
+    <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
+    <title>Divulgue - INAD</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./Imagens/ICON.png" alt="icon">
+            <h1>I'm <span class="not">Not</span> a Devil</h1>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="descubra.html">Descubra</a> </li>
+                <li><a href="novidade.html">Novidade</a></li>
+                <li><a href="#" onclick="logoff()">Logout</a></li>
+                <li><a href="projetos.html" style="color: red;">Anuncie</a> </li>
+                <li><a href="avaliacao.html">Avalie</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-geral">
+        <div class="meio">
+            <div class="banner">
+                <div class="banner-container">
+                   Olá: <b id="b_usuario"></b>
+                <h1>I'm <span class="not">Not</span> a Devil</h1>
+
+                <h3>TUDO SOBRE O PIOR GENERO MUSICAL</h3>
+            </div>
+        </div>
+            <div class="corpo-div1">
+                
+            <div class="box-login">
+                <h1 class="login"> Anuncie! </h1>
+
+               
+                <div class="formulario">
+                <form id="form_projeto" method="post" onsubmit="return registrar()" class="form">
+                    <input id="idUser" name="fkUsuario" style="display: none;">
+                    Nome Projeto:
+                    <input type="text" class="input-padrao" name="nomeProjeto">
+                    <br>
+                    Classe Projeto:
+                    <input type="text" class="input-padrao" name="tipoProjeto">
+                    <br>
+                    Link Projeto:
+                    <input type="text" class="input-padrao" name="linkProjeto">
+                    <br>
+                    <button id="btn_entrar">Anunciar</button>
+                </form>
+
+                
+
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro"></div>
+
+                    </div>
+                </div>
+                    
+                <div class="baiLog">
+
+                    <h1 class="barraBaixo">Anuncie!</h1>  
+
+                </div>
+                     
+                </div>
+                         
+                    </div>
+                </div>
+
+    <div class="footer">
+
+        <h1> Um Projeto de:
+            <br>
+            Abner B. M. Nunes
+        </h1>
+
+        <span class="logo"> I'm <span class="not">Not</span> a Devil</span>
+
+        <h2>
+            Projeto em Desenvolvimento
+            <br>
+            Sujeito à Melhorias
+        </h2>
+
+    </div>
+</body>
+</html>
+
+<script>
+
+verificar_autenticacao();
+
+function registrar() {
+            var formulario = new URLSearchParams(new FormData(form_projeto));
+            fetch("/usuarios/anunciar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+                
+            });
+    
+            return false;
+        }
+
+</script>

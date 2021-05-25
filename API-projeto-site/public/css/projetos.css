@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(117 21 22);
+}
+
+.container-geral{
+    height: 100%;
+    width: 100%;
+}
+
+.meio{
+    width: 85%;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(255, 221, 221);
+    margin-left: 150px;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    background-image: url('banner2.jpg');
+    text-align: justify;
+    background-size: cover;
+    border-bottom: solid rgb(155, 1, 1) 8px;
+    box-shadow: #000000 0px 45px 600px ;
+}
+
+.banner h3{
+width: 70%;
+margin: auto;
+text-align: center;
+}
+
+.banner h1 {
+    color: white;
+    padding-top: 135px;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+.banner h1{
+    font-family: 'Metal Lord';
+   padding-top: 11%;
+    color: white;
+    text-align: center;
+}
+.banner h3{
+        font-family: 'MetalShred';
+        font-size: 50px;
+        color: white;
+        padding-left: 40px;
+        text-align: center;
+}
+
+.login{
+    font-family: 'Metal Lord';
+    color: rgb(107, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    border-bottom: solid rgb(155, 1, 1)3px;
+    padding-top: 20px;
+}
+
+.formulario{
+    margin-top: 170px;
+    justify-content: center;
+    width: 25%;
+    margin-left: 36%;
+    align-items: center;
+    background-color: rgb(155, 155, 155);
+    text-align: center;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: ridge;
+    border-color: rgb(105, 0, 0);
+    box-shadow: #000000 40px 40px 50px ;
+    padding-top: 50px;
+    margin-top: 200px;
+}
+
+.formulario button{
+    width: 270px;     
+    height:68px; 
+    margin-left: 23px;
+    background: no-repeat #690000;
+    font-family:'MetalShred';
+    font-size:40px;
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+
+
+
+
+.form{
+    font-family: 'MetalShred';
+    font-size: 30px;
+}
+
+.form input{
+width: 250px;
+height: 25px;
+border-style: outset;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+.baiLog{
+    margin-top: 325px;
+    text-align: center;
+}
+
+.barraBaixo{
+    font-family: 'Metal Lord';
+    color: rgb(107, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    border-top: solid rgb(155, 1, 1)3px;
+
+    
+
+}

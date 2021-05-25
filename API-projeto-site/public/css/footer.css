@@ -1,0 +1,39 @@
+.footer {
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    
+    border-top: solid rgb(114, 0, 0) 8px ;
+}
+
+
+
+.footer h1 {
+    font-family: 'Metal Lord';
+    font-size: 30px;
+    color: white;
+    padding-left: 50px;
+    float: left;
+}
+
+.footer h2{
+    font-family: 'Metal Lord';
+    font-size: 30px;
+    color: white;
+    padding-right: 50px;
+    float: right;
+    text-align: right;
+    
+}
+
+.logo{
+    justify-content: center;
+    font-family: 'Metal Lord';
+    font-size: 70px;
+    color: white;
+    align-items: center;
+    text-align: center;
+   padding-left: 400px;
+ 
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - INAD</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/headerNot.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--header inicio-->
+    <div class="header">
+        <div class="container">
+            <img src="./Imagens/ICON.png" alt="icon">
+            <h1>I'm <span class="not">Not</span> a Devil</h1>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="descubra.html">Descubra</a> </li>
+                <li><a href="novidade.html">Novidade</a></li>
+                <li><a href="login.html" style="color: red;">Login</a> </li>
+                <li><a href="cadastro.html" >Cadastro</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--header fim-->
+
+    <div class="container-geral">
+        <div class="meio">
+
+            <div class="box-login">
+                <h1 class="login"> Login </h1>
+
+                <img src="imagens/obesyx.png" alt="" class="belzeLog">
+                <img src="imagens/hubbath.jpg" alt="" class="sloth">
+                <div class="formulario">
+                <form id="form_login" method="post" onsubmit="return entrar()" class="form">
+                    Email:
+                    <input type="text" class="input-padrao" name="login">
+                    <br>
+                    Senha:
+                    <input type="password" class="input-padrao" name="senha">
+                    <br>
+                    <button id="btn_entrar">Entrar</button>
+                </form>
+
+                <u style="color: black; font-family: 'MetalShred'; font-size: 30px;">Esqueceu sua senha?</u>
+
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro"></div>
+
+                    </div>
+                </div>
+                    
+                <div class="baiLog">
+
+                    <h1 class="barraBaixo">Login</h1>  
+
+                </div>
+                     
+                </div>
+               
+            </div>
+        </div>
+    
+
+    <!--footer inicio-->
+    <div class="footer">
+
+        <h1> Um Projeto de:
+            <br>
+            Abner B. M. Nunes
+        </h1>
+       
+        <h2>
+            Projeto em Desenvolvimento
+            <br>
+            Sujeito à Melhorias
+        </h2>
+    
+        <span class="logo"> I'm <span class="not">Not</span> a Devil</span>
+    
+        
+    
+    </div>
+    <!--footer fim-->
+
+</body>
+
+</html>
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.emailUsuario;
+                    sessionStorage.id_usuario_meuapp = json.idUsuario;
+
+                    window.location.href = 'avaliacoes.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

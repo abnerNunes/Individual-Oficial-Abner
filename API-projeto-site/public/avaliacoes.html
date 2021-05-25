@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating - INAD</title>
+    <link rel="stylesheet" href="css/avaliacoes.css">
+    <link rel="stylesheet" href="css/headerNot.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
+    <script type="text/javascript" src="funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./Imagens/ICON.png" alt="icon">
+            <h1>I'm <span class="not">Not</span> a Devil</h1>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="descubra.html">Descubra</a> </li>
+                <li><a href="#" onclick="logoff()">Logout</a></li>
+                <li><a href="novidade.html">Novidade</a></li>
+                <li><a href="projetos.html">Anunciar</a> </li>
+                <li><a href="avaliacao.html" style="color: red;">Avalie</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-geral">
+        <div class="meio">
+            <div class="banner">
+                <div class="banner-container">
+                   Olá: <b id="b_usuario"></b>
+                <h1>I'm <span class="not">Not</span> a Devil</h1>
+
+                <h3>TUDO SOBRE O PIOR GENERO MUSICAL</h3>
+            </div>
+        </div>
+            <div class="corpo-div1">
+                <div class="img-div1">
+                    <img src="Imagens/wearenot.jpg" alt="">
+                </div>
+
+                <div class="txt-div1">
+                    <div id="b_usuario"></div>
+                    <h1>We Are Not Your Kind</h1>
+                    <br>
+                  
+                        <h4>Banda:</h4> Slipknot <br>
+                        <h4>Data Lançamento:</h4> 09 de Agosto de 2019 <br>
+                        <h4>Faixas:</h4> 14 <br>
+                        <h4>Gênero:</h4> NU Metal <br>
+                        <br>
+                        <a href="https://open.spotify.com/album/754RY5WpZ2LTUZsk8kDBju?si=f0cc7a9f4bb748f3">We Are Not Your Kind</a>
+                  </div>
+
+                  <div class="nota">
+                      <h3>Avaliação dos Usuários</h3>
+                      <br>  
+                      <b id="b_nota"></b>
+                      <br>
+
+                    <form class="form-avalia" id="form_avaliar" methos="post" onsubmit="return avaliar()">
+                        <input value=1 name="fkItem" style="display: none;">
+                        <input id="idUser" name="fkUsuario" style="display: none;">
+                    Nota:<input name="nota" type="number">
+                    <button>Avaliar</button>
+                    </form>
+
+                  </div>
+            </div>
+
+            <div class="corpo-div1">
+                <div class="img-div1">
+                    <img src="Imagens/reckless.jpg" alt="">
+                </div>
+
+                <div class="txt-div1">
+                    <div id="b_usuario"></div>
+                    <h1>Reckless and Relentless</h1>
+                    <br>
+                  
+                        <h4>Banda:</h4> Asking Alexandria <br>
+                        <h4>Data Lançamento:</h4> 05 de Abril de 2011 <br>
+                        <h4>Faixas:</h4> 12 <br>
+                        <h4>Gênero:</h4> MetalCore <br>
+                        <br>
+                        <a href="https://open.spotify.com/album/3aFx7UfKu9KkyPFRGkgyeD?si=9QmkVGoFS-6NCFbWFaz6Jw">Reckless and Relentless</a>
+                  </div>
+
+                  <div class="nota">
+                      <h3>Avaliação dos Usuários</h3>
+                      <br>  
+                      <b id="b_nota"></b>
+                      <br>
+
+                    <form class="form-avalia" id="form_avaliar2" methos="post" onsubmit="return avaliar2()">
+                        <input value=2 name="fkItem2" style="display: none;">
+                        <input id="idUser2" name="fkUsuario2" style="display: none;">
+                    Nota:<input name="nota2" type="number">
+                    <button>Avaliar</button>
+                    </form>
+
+                  </div>
+            </div>
+           
+            <div class="corpo-div1">
+                <div class="img-div1">
+                    <img src="Imagens/panth.jpg" alt="">
+                </div>
+
+                <div class="txt-div1">
+                    <div id="b_usuario"></div>
+                    <h1 style="font-size: 30px;">Pantheon of The Nightside Gods</h1>
+                    <br>
+                  
+                        <h4>Banda:</h4>Belzebubs <br>
+                        <h4>Data Lançamento:</h4> 26 de Abril de 2019 <br>
+                        <h4>Faixas:</h4> 11 <br>
+                        <h4>Gênero:</h4> Black Metal <br>
+                        <br>
+                        <a href="https://open.spotify.com/album/0TAQARpkOylXFwDT81Hdvi?si=6Z4RwVZmRdKYRHPRzyKWXw">Pantheon of The Nightside Gods</a>
+                  </div>
+
+                  <div class="nota">
+                      <h3>Avaliação dos Usuários</h3>
+                      <br>  
+                      <b id="b_nota"></b>
+                      <br>
+
+                    <form class="form-avalia" id="form_avaliar3" methos="post" onsubmit="return avaliar3()">
+                        <input value=3 name="fkItem3" style="display: none;">
+                        <input id="idUser3" name="fkUsuario3" style="display: none;">
+                    Nota:<input name="nota3" type="number">
+                    <button>Avaliar</button>
+                    </form>
+
+                   
+                  </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <h1> Um Projeto de:
+            <br>
+            Abner B. M. Nunes
+        </h1>
+
+        <span class="logo"> I'm <span class="not">Not</span> a Devil</span>
+
+        <h2>
+            Projeto em Desenvolvimento
+            <br>
+            Sujeito à Melhorias
+        </h2>
+
+    </div>
+    </body>
+    </html>
+
+    <script>
+
+verificar_autenticacao();
+
+        function avaliar() {
+            var formulario = new URLSearchParams(new FormData(form_avaliar));
+            fetch("/usuarios/avaliar", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+                
+            });
+    
+            return false;
+        }
+
+        function avaliar2() {
+            var formulario = new URLSearchParams(new FormData(form_avaliar2));
+            fetch("/usuarios/avaliar2", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+                
+            });
+    
+            return false;
+        }
+
+        function avaliar3() {
+            var formulario = new URLSearchParams(new FormData(form_avaliar3));
+            fetch("/usuarios/avaliar3", {
+                method: "POST",
+                body: formulario
+            }).then(function (response) {
+                
+            });
+    
+            return false;
+        }
+
+
+        </script>

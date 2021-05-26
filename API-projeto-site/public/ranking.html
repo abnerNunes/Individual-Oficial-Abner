@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/headerNot.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/ranking.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="./Imagens/ICON.png" alt="icon">
+            <h1>I'm <span class="not">Not</span> a Devil</h1>
+            <ul>
+                <li><a href="index.html" style="color: red;">Home</a> </li>
+                <li><a href="descubra.html">Descubra</a> </li>
+                <li><a href="novidade.html">Novidade</a></li>
+                <li><a href="login.html" >Login</a> </li>
+                <li><a href="cadastro.html">Cadastro</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-geral">
+        <div class="meio">
+            <div class="banner">
+
+                <div class="banner-container">
+
+                    <div class="txt-banner">
+                        <h1>I'm <span class="not">Not</span> a Devil</h1>
+
+                        <h3>TUDO SOBRE O PIOR GENERO MUSICAL</h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <span class="musica-titulo">Música: </span><input class="musica-input" id="in_nome_aluno">
+            <br>
+            <button onclick="cadastrar_musica()">RANK!</button>
+            <br>
+            <div id="div_alunos_container" class="musica-lista"></div>
+            <br>
+            <br>
+            <iframe src="https://open.spotify.com/embed/album/57iXTZZW4VLkrBoErSsI5y" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            </div>
+</body>
+</html>
+
+<script>
+    var lista_alunos = [];
+    function cadastrar_musica(){
+        
+
+        var aluno = in_nome_aluno.value;
+        var aluno_existente = false;
+
+        for(var contador = 0; contador < lista_alunos.length; contador++){
+            if(lista_alunos[contador] == aluno){
+                aluno_existente = true;
+            }
+        }
+
+            if(aluno_existente){
+                alert(`Opa, aluno repetido, hoje não!`);
+            } else {
+                lista_alunos.push(in_nome_aluno.value);
+            }
+
+
+            div_alunos_container.innerHTML = '';
+        for(var contador = 0; contador < lista_alunos.length; contador++){
+            div_alunos_container.innerHTML += `${lista_alunos[contador]}<br>`;
+        }
+    }
+</script>

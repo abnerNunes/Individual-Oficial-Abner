@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(117, 21, 22);
+}
+
+
+/* FIM DO HEADER */
+.container-geral{
+    height: 100%;
+    width: 100%;
+}
+
+.meio{
+    width: 85%;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(255, 221, 221);
+    margin-left: 7%;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('banner2.jpg');
+    text-align: justify;
+    background-size: cover;
+    border-bottom: solid rgb(155, 1, 1) 8px;
+    box-shadow: #000000 0px 45px 600px ;
+}
+
+.banner-container h3{
+width: 70%;
+margin: auto;
+text-align: center;
+}
+
+.banner-container h1 {
+    color: white;
+    padding-top: 10%;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+.banner h1{
+    font-family: 'Metal Lord';
+   padding-top: 11%;
+    color: white;
+    text-align: center;
+}
+.banner h3{
+        font-family: 'MetalShred';
+        font-size: 50px;
+        color: white;
+        padding-left: 1%;
+        text-align: center;
+}

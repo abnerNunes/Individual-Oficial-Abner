@@ -59,3 +59,65 @@ text-align: center;
         padding-left: 1%;
         text-align: center;
 }
+
+.corpo-div1 {
+    height: 560px;
+    border-bottom: solid rgb(155, 1, 1) 5px;
+    background-color: rgb(255, 231, 231);
+    box-shadow: rgb(0, 0, 0) 5px 4px 10px;
+    align-items: center;
+    display: block;
+}
+
+.corpo-div1 span{
+font-family: 'Metal Lord';
+color: rgb(117, 21, 22);
+font-size: 40px;
+padding-left: 20px;
+
+}
+
+.corpo-div1 input{
+    border-radius: 5px;
+    border-style: ridge;
+    width: 200px;
+    height: 20px;
+    border-color: rgb(117, 21, 22);
+}
+
+.corpo-div1 iframe{
+    float: right;
+    width: 500px;
+    padding-right: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+ .corpo-div1 button{
+    width: 270px;     
+    height:68px; 
+    margin-left: 50px;
+    background: no-repeat #720000;
+    font-family:'MetalShred';
+    font-size:40px;
+    color:#fff;
+    border-radius: 10px;
+ }
+
+ .lista-rank{
+     padding-top: 30px;
+ }
+
+ .baiLog{
+    margin-top: 300px;
+    text-align: center;
+}
+
+.barraBaixo{
+    font-family: 'Metal Lord';
+    color: rgb(107, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    border-top: solid rgb(155, 1, 1)3px;
+
+
+}

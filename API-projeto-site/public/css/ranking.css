@@ -61,7 +61,7 @@ text-align: center;
 }
 
 .corpo-div1 {
-    height: 560px;
+    height: auto;
     border-bottom: solid rgb(155, 1, 1) 5px;
     background-color: rgb(255, 231, 231);
     box-shadow: rgb(0, 0, 0) 5px 4px 10px;
@@ -109,6 +109,7 @@ padding-left: 20px;
 
  .baiLog{
     margin-top: 300px;
+    
     text-align: center;
 }
 
@@ -118,6 +119,9 @@ padding-left: 20px;
     text-align: center;
     font-size: 60px;
     border-top: solid rgb(155, 1, 1)3px;
+}
 
-
+.musica-lista{
+    font-family: 'MetalShred';
+    font-size: 40px;
 }

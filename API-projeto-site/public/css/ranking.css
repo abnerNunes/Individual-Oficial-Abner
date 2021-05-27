@@ -61,12 +61,13 @@ text-align: center;
 }
 
 .corpo-div1 {
-    height: auto;
+    height: 700px;
     border-bottom: solid rgb(155, 1, 1) 5px;
     background-color: rgb(255, 231, 231);
     box-shadow: rgb(0, 0, 0) 5px 4px 10px;
     align-items: center;
     display: block;
+    position: static;
 }
 
 .corpo-div1 span{
@@ -105,11 +106,13 @@ padding-left: 20px;
 
  .lista-rank{
      padding-top: 30px;
+     height: 100px;
+     padding-left: 50px;
  }
 
  .baiLog{
-    margin-top: 300px;
-    
+    margin-top: 450px;
+   
     text-align: center;
 }
 
@@ -119,9 +122,11 @@ padding-left: 20px;
     text-align: center;
     font-size: 60px;
     border-top: solid rgb(155, 1, 1)3px;
+
 }
 
 .musica-lista{
     font-family: 'MetalShred';
     font-size: 40px;
+    padding-left: 50px;
 }

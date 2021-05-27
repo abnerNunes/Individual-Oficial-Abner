@@ -44,14 +44,18 @@
             </div>
 
             <div class="corpo-div1">
+                 
                <iframe src="https://open.spotify.com/embed/album/57iXTZZW4VLkrBoErSsI5y" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+               <div id="link"></div>
                <div class="lista-rank">
             <span class="musica-titulo">Música: </span><input class="musica-input" id="in_nome_aluno">
             <br>
             <button onclick="cadastrar_musica()">RANK!</button>
             <br>
+           
             <div id="div_alunos_container" class="musica-lista"></div>
+
+           
         </div>
             <br>
             <br>
@@ -59,17 +63,55 @@
             <div class="baiLog">
 
                 <h1 class="barraBaixo">Stand Up And Scream</h1>  
-
+               
             </div>
             </div>
 
+            <div class="corpo-div1">
+                 
+                <iframe src="https://open.spotify.com/embed/album/0FZK97MXMm5mUQ8mtudjuK" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div id="link2"></div>
+                <div class="lista-rank">
+             <span class="musica-titulo">Música: </span><input class="musica-input" id="in_nome_aluno2">
+             <br>
+             <button onclick="cadastrar_musica2()">RANK!</button>
+             <br>
             
-
-            
-
-            
+             <div id="div_alunos_container2" class="musica-lista"></div>
+         </div>
+             <br>
+             <br>
+             
+             <div class="baiLog">
+ 
+                 <h1 class="barraBaixo">The Black Parade</h1>  
+                
+             </div>
+             </div>           
 
            
+
+            <div class="corpo-div1">
+                 
+                <iframe src="https://open.spotify.com/embed/album/6mWsWVsfWpoZ2d6uxm1ND1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <div id="link3"></div>
+                <div class="lista-rank">
+             <span class="musica-titulo">Música: </span><input class="musica-input" id="in_nome_aluno3">
+             <br>
+             <button onclick="cadastrar_musica3()">RANK!</button>
+             <br>
+            
+             <div id="div_alunos_container3" class="musica-lista"></div>
+         </div>
+             <br>
+             <br>
+             
+             <div class="baiLog">
+ 
+                 <h1 class="barraBaixo">The Nothing</h1>  
+                
+             </div>
+             </div>           
 
             </div>
             </div>
@@ -94,13 +136,16 @@
 </html>
 
 <script>
+    var lista_alunos2 = [];
     var lista_alunos = [];
+    var lista_alunos3 = [];
+
     function cadastrar_musica(){
-        
+       
 
         var aluno = in_nome_aluno.value;
         var aluno_existente = false;
-        var nro = 10
+        var nro = 0;
 
         for(var contador = 0; contador < lista_alunos.length; contador++){
             if(lista_alunos[contador] == aluno){
@@ -117,9 +162,78 @@
 
             div_alunos_container.innerHTML = '';
         for(var contador = (lista_alunos.length - 1); contador >= 0 ; contador--){
-        
+       
+            nro ++;
             div_alunos_container.innerHTML += `${nro}º - ${lista_alunos[contador]}<br>`;
-            nro --;
+
+            if(nro == 10){
+                link.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/79QHayucQm6M4wUlUbhQNQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            
+        }
+    }
+
+    function cadastrar_musica2(){
+        
+
+        var aluno2 = in_nome_aluno2.value;
+        var aluno_existente2 = false;
+        var nuro = 0;
+
+        for(var contador2 = 0; contador2 < lista_alunos2.length; contador2++){
+            if(lista_alunos2[contador2] == aluno2){
+                aluno_existente2 = true;
+            }
+        }
+
+            if(aluno_existente2){
+                alert(`Opa, aluno repetido, hoje não!`);
+            } else {
+                lista_alunos2.push(in_nome_aluno2.value);
+            }
+
+
+            div_alunos_container2.innerHTML = '';
+        for(var contador2 = (lista_alunos2.length - 1); contador2 >= 0 ; contador2--){
+        
+            nuro ++;
+            div_alunos_container2.innerHTML += `${nuro}º - ${lista_alunos2[contador2]}<br>`;
+            
+            if(nuro == 10){
+                link2.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9wa6XirBPv8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+        }
+    }
+
+    function cadastrar_musica3(){
+        
+
+        var aluno3 = in_nome_aluno3.value;
+        var aluno_existente3 = false;
+        var numro = 0;
+
+        for(var contador3 = 0; contador3 < lista_alunos3.length; contador3++){
+            if(lista_alunos3[contador3] == aluno3){
+                aluno_existente3 = true;
+            }
+        }
+
+            if(aluno_existente3){
+                alert(`Opa, aluno repetido, hoje não!`);
+            } else {
+                lista_alunos3.push(in_nome_aluno3.value);
+            }
+
+
+            div_alunos_container3.innerHTML = '';
+        for(var contador3 = (lista_alunos3.length - 1); contador3 >= 0 ; contador3--){
+        
+            numro ++;
+            div_alunos_container3.innerHTML += `${numro}º - ${lista_alunos3[contador3]}<br>`;
+            
+            if(numro == 10){
+                link3.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/5s9I7aXdnByCjZx59dcpJh" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
         }
     }
 </script>

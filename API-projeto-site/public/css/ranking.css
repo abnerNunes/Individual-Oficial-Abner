@@ -89,7 +89,8 @@ padding-left: 20px;
 .corpo-div1 iframe{
     float: right;
     width: 500px;
-    padding-right: 20px;
+    margin-right: 20px;
+    border: solid rgb(107, 0, 0) 4px;
     margin-top: 30px;
     border-radius: 10px;
 }

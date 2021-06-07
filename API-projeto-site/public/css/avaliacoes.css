@@ -166,3 +166,17 @@ height: 75px;
    padding-top: 100px;
 }
 
+.graph{
+    height: 400px;
+    
+}
+
+.container-graph{
+    height: 400px;
+    border-bottom: solid rgb(155, 1, 1) 5px;
+    background-color: rgb(255, 231, 231);
+    box-shadow: rgb(0, 0, 0) 5px 4px 10px;
+    align-items: center;
+    display: block;
+}
+

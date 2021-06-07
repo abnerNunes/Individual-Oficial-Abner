@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" href="./Imagens/ICON.png" type="image/x-icon">
     <script type="text/javascript" src="funcoes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
@@ -61,7 +63,7 @@
                   <div class="nota">
                       <h3>Avaliação dos Usuários</h3>
                       <br>  
-                      <div class="mediana">7.1</div>
+                      <div class="mediana">6.0</div>
                       <br>
 
                     <form class="form-avalia" id="form_avaliar" methos="post" onsubmit="return avaliar()">
@@ -129,7 +131,7 @@
                   <div class="nota">
                       <h3>Avaliação dos Usuários</h3>
                       <br>  
-                      <div class="mediana">9.4</div>
+                      <div class="mediana">9.0</div>
                       <br>
 
                     <form class="form-avalia" id="form_avaliar3" methos="post" onsubmit="return avaliar3()">
@@ -142,7 +144,11 @@
                    
                   </div>
             </div>
-
+<!-- Gráfico de Barras -->
+<div class="container-graph">
+<div class="graph">
+    <canvas id="myChartBar"></canvas>
+  </div>
         </div>
     </div>
 
@@ -162,6 +168,10 @@
         </h2>
 
     </div>
+</div> 
+        
+  
+
     </body>
     </html>
 
@@ -205,5 +215,25 @@ verificar_autenticacao();
             return false;
         }
 
+ //grafico de barras - quantidade por especieis
+ const labelsBar = ["We Are Not Your Kind", "Reckless and Relentless", "Pantheon of The Nightside Gods"];
+ 
+ const dataBar = {
+   labels: labelsBar,
+   datasets: [{
+     label: 'Média de Notas',
+   backgroundColor: 'rgb(117, 21, 22)',
+   borderColor: 'rgb(117, 21, 22)',
+   data: [6.0, 9.6, 9.0],
+   }]
+ }
+   const configBar = {
+     type: "bar",
+     data: dataBar,
+     options: {maintainAspectRatio: false,}
+
+   }
+   var myChart = new Chart(
+   document.getElementById('myChartBar'), configBar);
 
         </script>

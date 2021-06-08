@@ -22,4 +22,4 @@
 
 ## **Funcionamento**
 **Clone os arquivos e inicie a API por meio do Git Bash, usando o comando npm start.**
-![telas](https://cdn.discordapp.com/attachments/805935156308738088/831990379389386772/unknown.png)
+![telas](https://cdn.discordapp.com/attachments/573246882210643968/851796462823407626/unknown.png)

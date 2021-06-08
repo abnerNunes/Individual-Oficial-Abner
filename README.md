@@ -7,7 +7,7 @@
 ![Badge](https://img.shields.io/badge/Style-CSS-red?&logo=css)
 ![Badge](https://img.shields.io/badge/Graph-ChartsJS-blue?&logo=charts)
 
-### O Projeto **Dexter** proporciona uma solução IoT para os grandes laboratórios, visando a redução na perda e desperdício de medicamentos, por meio de uma correção no sistema de monitoramento de temperatura nos respectivos armazéns.
+### O Projeto **I'm Not a Devil** Oferece uma plataforma Web que disponibiliza informações e funcionalidades em HTML para os fãs do gênero Heavy Metal.
 #
 ###  **Conteúdo do Projeto:**
 -	Feed de Notícias

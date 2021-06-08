@@ -17,6 +17,7 @@
 -	Divulgação de Novos Projetos
 
 ### **Layouts**
+![telas](https://cdn.discordapp.com/attachments/573246882210643968/851796029899538442/unknown.png)
 ![telas](https://cdn.discordapp.com/attachments/573246882210643968/851795545033932840/unknown.png)
 
 ## **Funcionamento**

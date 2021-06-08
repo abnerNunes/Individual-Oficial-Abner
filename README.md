@@ -1,6 +1,6 @@
 # Individual-Oficial-Abner
-![I'M NOT A DEVIL](https://github.com/BandTec/grupo11-cco-2021-1/blob/main/Algoritmo/SITE%20INSTITUCIONAL%20-%20Final/SITE%20INSTITUCIONAL/TestesAPI's/API-PROJETO-SITE/public/imagens/TERMOWATCH.png)
-# **TermoWatch**
+![I'M NOT A DEVIL](https://cdn.discordapp.com/attachments/573246882210643968/851794887615447090/unknown.png)
+# **I'm Not a Devil**
 
 ![Badge](https://img.shields.io/badge/Code-HTML-green?&logo=html)
 ![Badge](https://img.shields.io/badge/Code-JavaScript-yellow?&logo=api)
@@ -10,14 +10,14 @@
 ### O Projeto **Dexter** proporciona uma solução IoT para os grandes laboratórios, visando a redução na perda e desperdício de medicamentos, por meio de uma correção no sistema de monitoramento de temperatura nos respectivos armazéns.
 #
 ###  **Conteúdo do Projeto:**
--	Sensor LM35 – simulação NodeJS
--	ChartJS
--	Página HTML
--	Customização em CSS
--	Orçamento de serviço
+-	Feed de Notícias
+-	Página de Sorteamento Aleatório de Bandas
+-	Sistema de Login e Cadastro de Usuários
+-	Sistema de Avaliação de Álbuns com Infográficos
+-	Divulgação de Novos Projetos
 
 ### **Layouts**
-![telas](https://cdn.discordapp.com/attachments/831981380715282442/831990618523697162/gif-paginas.gif)
+![telas](https://cdn.discordapp.com/attachments/573246882210643968/851795545033932840/unknown.png)
 
 ## **Funcionamento**
 **Clone os arquivos e inicie a API por meio do Git Bash, usando o comando npm start.**

@@ -108,7 +108,9 @@ function registrar() {
                 method: "POST",
                 body: formulario
             }).then(function (response) {
-                
+                 if(response.ok){
+                     alert(`Projeto Cadastrado, Publicaremos em Breve`);
+                 }
             });
     
             return false;
